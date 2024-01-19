@@ -25,5 +25,5 @@ model Reservation {
   date    DateTime
   user    Int
   user_id User     @relation(fields: [user], references: [id])
-  price   Int
+  price   Decimal
 }
